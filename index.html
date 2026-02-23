@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ergonomie pratique pour l'entretien ménager léger</title>
+  <meta name="description" content="Ergonomie pratique pour l'entretien ménager léger. Principes de base pour une posture saine" />
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+
+  <!-- Sección Hero (cabecera principal) -->
+  <section id="hero">
+    <nav>
+      <a href="Accueil.PDF" target="_blank">Accueil</a>
+      <a href="Formation.PDF" target="_blank">Formation</a>
+      <a href="À propos.PDF" target="_blank">À propos</a>
+    </nav>
+
+    <div id="bandeau">
+      <div id="contenu">
+        <img src="assets/img/logo_ergopratique-removebg-preview.png" alt="logo ErgoPratique" width="100"/>
+        <h1>Ergonomie pratique pour l'entretien ménager léger</h1>
+        <h2>Principes de base pour une posture saine</h2>
+        <h3>Techniques de travail sécuritaires</h3>
+        <br><br>
+        
+        <!-- Botón de contacto -->
+        <a href="mailto:lennymorgan27@gmail.com?subject=Demande de Contact" id="btnMailTo">
+          Contactez-moi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección "À propos" -->
+  <section id="apropos">
+    <div id="apropos_image">
+      <img src="assets/img/apropos.jpg" alt="Employée nettoyant un miroir">
+    </div>
+    <div id="apropos_texte">
+      <p>
+        Bienvenue sur notre site, une initiative portée par le service des Ressources Humaines de notre entreprise, spécialisée dans le nettoyage à domicile pour particuliers.
+        <br><br>
+        Notre mission ? Valoriser le métier de nos collaborateurs, former, accompagner et inspirer. Parce que derrière chaque intervention de qualité se cache un savoir-faire, une rigueur et une véritable éthique professionnelle, nous avons souhaité créer cet espace pour mettre en lumière l’excellence de nos équipes.
+        <br><br>
+        Ici, vous découvrirez des vidéos pédagogiques, des photos explicatives, ainsi que des témoignages et articles détaillant.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección CTA: Accès à la formation -->
+  <section id="formation-cta">
+    <div class="cta-box">
+      <h2>Votre formation ergonomique vous attend</h2>
+      <p>
+        Retrouvez tous les modules : postures, déplacements, utilisation des outils, sécurité.<br>
+        Conçus pour vous, par des professionnels du nettoyage.
+      </p>
+      <a href="Formation.PDF" target="_blank" class="btn-formation">
+        Accéder à la formation complète
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- Sección Lead: Fiche mémo d'ergonomie -->
+  <section id="lead">
+    <div class="form">
+      <h2>📥 Recevez votre fiche mémo d'ergonomie</h2>
+      <p>
+        Une synthèse visuelle des bonnes postures à garder pendant le ménage.<br>
+        À imprimer et à afficher.
+      </p>
+      <a href="fiche-ergo.pdf" download class="btn-download">
+        📥 Télécharger la fiche mémo (PDF)
+      </a>
+    </div>
+  </section>
+
+
+<!-- Sección: Fiches-conseils pratiques -->
+<section id="fiches-section">
+  <div class="section-header">
+    <h2>📚 Fiches-conseils pratiques</h2>
+    <p>Des guides rapides, clairs et utiles pour votre quotidien professionnel.</p>
+  </div>
+
+  <div class="fiches-grid">
+    <!-- Fiche 1: Chaussure -->
+    <div class="fiche-card">
+      <div class="fiche-icon">👞</div>
+      <h3>La bonne chaussure</h3>
+      <p>Protégez vos pieds contre les chutes, glissades et blessures.</p>
+      <a href="fiches/fiche-chaussure.html" class="btn-formation fiche-btn">
+        ➤ Voir la fiche
+      </a>
+    </div>
+
+    
+  </div>
+
+  <div class="center-link">
+    <a href="mailto:leonardo@lecadre.ca?subject=Demande de nouvelle fiche" class="btn-download">
+      📩 Proposer une nouvelle fiche
+    </a>
+  </div>
+</section>
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>
+        📞 Besoin d’aide ? Contactez Leonardo : <a href="mailto:leonardo@lecadre.ca">leonardo@lecadre.ca</a>
+      </p>
+      <p>
+        🏢 Service des Ressources Humaines – ErgoPratique © 2025
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal de motivación (aparece al hacer scroll) -->
+  <div id="motivationModal" class="modal">
+    <div class="modalBloc">
+      <div class="modalIcon">
+        <i class="fas fa-medal fa-4x" style="color: #e74c3c;"></i>
+      </div>
+      <div class="modalText">
+        <h4 class="modalTextTitle">🎉 ¡Félicitations!</h4>
+        <p>Vous avez terminé le module d'ergonomie de base.</p>
+        <p>Souhaitez-vous continuer à apprendre ?</p>
+      </div>
+      <div class="modalBtn">
+        <a href="Formation.PDF#module2" target="_blank" class="btn-modal-continue">
+          ▶ Oui, je veux continuer
+        </a>
+        <a href="#" class="btn-modal-close" onclick="closeModal(); return false;">
+          ⏸️ Plus tard
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Obtener referencia al botón de contacto
+    const btnMailTo = document.getElementById("btnMailTo");
+
+    // Cambiar texto inicial (opcional)
+    btnMailTo.innerHTML = "Contactez-moi";
+
+    // Asignar evento onclick
+    btnMailTo.onclick = function() {
+      console.log('La función fue llamada');
+      btnMailTo.innerHTML = "À très bientôt";
+      console.log('Texto actualizado');
+    };
+
+    // Mostrar modal al hacer scroll al 80% de la página
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+      if (scrollTop > docHeight * 0.8) {
+        document.getElementById('motivationModal').style.display = 'flex';
+      }
+    });
+
+    // Función para cerrar la modal
+    function closeModal() {
+      document.getElementById('motivationModal').style.display = 'none';
+    }
+  </script>
+
+  <!-- Alerta de bienvenida (opcional) -->
+  <script>
+    alert('Bienvenue sur le site');
+  </script>
+
+</body>
+</html>
